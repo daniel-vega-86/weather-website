@@ -1,5 +1,3 @@
-console.log('Archivo javascript del lado del cliente a sido cargado!')
-
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const messageOne = document.querySelector('#message1')
