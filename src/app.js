@@ -8,6 +8,7 @@ const forecast = require('./utils/forecast.js')
 // console.log(path.join(__dirname, '../public'))
 
 const app = express()
+const port = process.env.PORT || 3000
 
 // Define caminos para la configuracion de expres
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -103,6 +104,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Servidor esta en el puesto 3000')
+app.listen(port, () => {
+    console.log('Servidor esta en el puesto ' + port)
 })
